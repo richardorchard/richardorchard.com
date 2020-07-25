@@ -15,10 +15,12 @@ steps:
 
 - task: AzureFileCopy@4
   inputs:
-    SourcePath: 'src'
+    SourcePath: '$(System.DefaultWorkingDirectory)'
     azureSubscription: 'Base Subscription(610e3b3a-028d-4f1b-ac1d-a5567a4f8b9d)'
     Destination: 'AzureBlob'
     storage: 'richardorchardusstorage'
-    ContainerName: 'test2'
+    ContainerName: '$web'
+
+
 
   
