@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <meta name="viewport" content="width=device-width" />
 
-        <title>Richard Orchard</title>
-        <link rel href="richardorchard.css" ></style> 
+<head>
+  <meta name="viewport" content="width=device-width" />
 
-    </head>
-    <body>
-        <div id="content" class="mw-body" role="main"></div>
-<h1 id="firstHeading" class="firstHeading">Richard Orchard</h1>
+  <title>Richard Orchard</title>
+  <link rel="stylesheet" href="css/moodboard.css">
 
 
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta name="description" content="Richard Orchard">
+
+</head>
+
+<body>
 
 
 
-<h2><span class="mw-headline" id="Early_life">Early life</span>
+  <header>
+    <h1>Richard Orchard</h1>
+  </header>
 
-</div>
-    </body>
+  <img src="images/buffy_the_vampire_slayer.jpg" alt="Buffy the Vampire Slayer"
+    title="Buffy the Vampire Slayer - my favourite TV show ever...." />
+  <img src="images/buffy_and_me.png" alt="Buffy, my dog and me. Buffy is about 6 months of age here."
+    title="Buffy, my dog and me. Buffy is about 6 months of age here." />
+
+  <img src="images/young_buffy.png" alt="A very young Buffy. Maybe 12 weeks old?"
+    title="A very young Buffy. Maybe 12 weeks old?" />
+
+  <img src="images/queen.jpg" alt="Queen - my favourite band.  Although, I am not a big fan of things after Freddie...." title="Queen - my favourite band.  Although, I am not a big fan of things after Freddie...." />
+
+
+  <script src="js/moodboard.js"></script>
+  <script>
+    new Moodboard('img', {
+      coverage: 0.2, // roughly how much of the space to cover with photos
+      variation: 0.2, // how much variation should there be between image sizes
+      resizeDelay: 300, // in miliseconds, how long to wait before repositioning photos when the browser window resizes
+      disableResize: false // whether to stop repositioning images when the browser window resizes
+    });
+  </script>
+
+</body>
+
 </html>
