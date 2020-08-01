@@ -16,7 +16,9 @@ jobs:
         folder: 'src'
         connection-string: ${{ secrets.CONNECTION_STRING }}
 
-  login:
+
+# https://medium.com/@shilyndon/purging-azure-cdn-with-github-actions-1c18e2adaf18
+  PurgeCDN:
     name: Purge CDN
     runs-on: ubuntu-latest
     steps: 
