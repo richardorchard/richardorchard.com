@@ -16,7 +16,8 @@ jobs:
     #    blob-container-name: '$web'
         connection-string: ${{ secrets.CONNECTION_STRING }}
 
-
+  purgeCDN:
+      runs-on: ubuntu-latest
     - name: Azure service principal login
       uses: azure/login@v1
       with:
