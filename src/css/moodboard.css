@@ -49,7 +49,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
  /* visibility: hidden;*/
-  width: 60%;
+  width: 40%;
 }
 blockquote:before {
   color: #ccc;
@@ -66,7 +66,7 @@ blockquote div {
 .js header {
   text-align: center;
   white-space: nowrap;
-  position: relative;
+
   z-index: 50;
   overflow: hidden;
   margin: 0;
@@ -87,7 +87,7 @@ header:before {
 
 h1 {
   z-index: 50;
-  position: absolute; /* add this */
+  position: fixed; /* add this */
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
