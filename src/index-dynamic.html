@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Richard Orchard</title>
+        <link rel="stylesheet" href="css/richardorchard.css" ></style> 
+          <link rel="stylesheet" href="css/masonry.css">
+    
+    </head>
+    <body>
+
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+
+
+
+  </div>
+  
+  
+  <script>
+
+
+var grid = document.querySelector('.grid');
+
+for (let index = 0; index < 20; index++) {
+    
+
+
+var div = document.createElement("Div");
+div.className = 'grid-item';
+
+var img = document.createElement('img');
+img.src = 'images/smallville.jpg';
+img.alt = 'test goes here';
+img.title = "text goes here";
+
+div.appendChild(img);
+
+grid.appendChild(div);
+}
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  msnry.layout();
+});
+
+
+  </script>
+
+
+    </body>
+</html>
