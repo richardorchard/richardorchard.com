@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v1
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.0.1s00'
+        dotnet-version: '3.1.x'
     - uses: lauchacarro/Azure-Storage-Action@master
       with:
         enabled-static-website: 'true'
