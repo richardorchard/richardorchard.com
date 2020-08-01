@@ -35,6 +35,7 @@ img {
   width: 31.9vw;
   padding: 2vw;
   mix-blend-mode: multiply;
+  border: 1px white;
 }
 
 header {
@@ -45,7 +46,7 @@ header {
   text-align: center;
   white-space: nowrap;
   position: relative;
-  z-index: 50;
+  /* z-index: 50;*/
   overflow: hidden;
   margin: 0;
 }
@@ -63,6 +64,7 @@ header:before {
 }
 
 h1 {
+  z-index: 50;
   white-space: normal;
   margin: 0 auto;
   display: inline-block;
