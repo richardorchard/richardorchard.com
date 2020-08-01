@@ -46,7 +46,7 @@ header {
   text-align: center;
   white-space: nowrap;
   position: relative;
-  /* z-index: 50;*/
+  z-index: 50;
   overflow: hidden;
   margin: 0;
 }
