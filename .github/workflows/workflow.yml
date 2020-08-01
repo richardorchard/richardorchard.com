@@ -3,7 +3,7 @@
 on: [push]
 jobs:
   build:
-    name: application
+    name: copy files to azure storage
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v1
