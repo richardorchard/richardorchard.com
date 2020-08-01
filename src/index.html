@@ -84,13 +84,12 @@ var msnry = new Masonry( grid, {
 });
 
 imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
   msnry.layout();
 });
 
 
   var images = document.images;
-    var description = document.getElementById('description');
+  var description = document.getElementById('description');
 
     for (let index = 0; index < images.length; index++) {
       const element = images[index];

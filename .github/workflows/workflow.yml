@@ -5,27 +5,26 @@ jobs:
   build:
     name: copy files to azure storage
     runs-on: ubuntu-latest
-    steps: 
-    - uses: actions/checkout@v1
-    - uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.x'
-    - uses: lauchacarro/Azure-Storage-Action@v1.0
-      with:
-        enabled-static-website: 'true'
-        folder: 'src'
-        connection-string: ${{ secrets.CONNECTION_STRING }}
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "3.1.x"
+      - uses: lauchacarro/Azure-Storage-Action@v1.0
+        with:
+          enabled-static-website: "true"
+          folder: "src"
+          connection-string: ${{ secrets.CONNECTION_STRING }}
 
-
-# https://medium.com/@shilyndon/purging-azure-cdn-with-github-actions-1c18e2adaf18
+  # https://medium.com/@shilyndon/purging-azure-cdn-with-github-actions-1c18e2adaf18
   PurgeCDN:
     name: Purge CDN
     runs-on: ubuntu-latest
-    steps: 
-    - uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    steps:
+      - uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - run: az cdn endpoint purge -n ${{ secrets.AZURE_CDN_ENDPOINT }} --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --content-paths "/*" --no-wait  --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} 
-    
-    - run: az logout
+      - run: az cdn endpoint purge -n ${{ secrets.AZURE_CDN_ENDPOINT }} --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --content-paths "/*" --no-wait  --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
+
+      - run: az logout
