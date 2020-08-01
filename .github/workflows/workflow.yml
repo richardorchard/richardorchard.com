@@ -9,7 +9,7 @@ jobs:
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.x'
-    - uses: lauchacarro/Azure-Storage-Action@v1
+    - uses: lauchacarro/Azure-Storage-Action@v1.0
       with:
         enabled-static-website: 'true'
         folder: '$web'
