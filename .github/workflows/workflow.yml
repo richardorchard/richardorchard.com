@@ -3,6 +3,7 @@
 on: [push]
 jobs:
   build:
+    name: application
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v1
@@ -13,22 +14,24 @@ jobs:
       with:
         enabled-static-website: 'true'
         folder: 'src'
-    #    blob-container-name: '$web'
         connection-string: ${{ secrets.CONNECTION_STRING }}
 
-  purgeCDN:
-      runs-on: ubuntu-latest
-    - name: Azure service principal login
-      uses: azure/login@v1
+  login:
+    name: Principal login
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        
-    # Do other steps
-        
-    - name: Purge CDN
-      run:
-        az cdn endpoint purge -n ${{ secrets.AZURE_CDN_ENDPOINT }} --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --content-paths "/*" --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --no-wait
-        
-    - name: Azure service principal logout
-      run: |
-        az logout
+      
+  clearCache:
+    name: Purge CDN
+    runs-on: ubuntu-latest
+    steps:
+      - run: az cdn endpoint purge -n ${{ secrets.AZURE_CDN_ENDPOINT }} --profile-name ${{ secrets.AZURE_CDN_PROFILE_NAME }} --content-paths "/*" --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --no-wait
+
+  logout:
+    name:  log out of service principal    
+    runs-on: ubuntu-latest
+    steps:
+      - run: az logout
