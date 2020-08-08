@@ -1,3 +1,9 @@
+
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -18,3 +24,15 @@ blockquote:before {
 blockquote div {
   display: inline;
 }
+
+.grid-item--gigante {
+    width: 30%;
+    height: 360px;
+    z-index: 2; /* above other items */
+  }
+  
+  .grid-item:hover {
+    background: #A2C;
+    border-color: white;
+    cursor: pointer;
+  }
