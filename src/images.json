@@ -1,0 +1,12 @@
+{
+    "images" : [
+        {
+        "src": "images/images/buffy_the_vampire_slayer.jpg",
+        "description": "test description"
+        },
+        {
+            "src": "images/images/buffy_the_vampire_slayer.jpg",
+            "description": "test description 2"
+            }
+    ]
+}
