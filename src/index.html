@@ -93,6 +93,10 @@
         img.alt = imageData.images[index].description;
         img.title = imageData.images[index].description;
 
+        img.onmouseover = function () {
+          description.innerHTML = (img.title);
+        }
+
         div.appendChild(img);
 
         grid.appendChild(div);
@@ -115,6 +119,10 @@
 
   </script>
 
+  <script src="js/richardorchard.js">
+
+
+  </script>
 
 </body>
 
