@@ -1,0 +1,36 @@
+{
+    "images": [
+        {
+            "src": "images/buffy_the_vampire_slayer.jpg",
+            "description": "My favourite TV show ever.  In the 2020 lockdown i started to rewatch it.  it is still amazing!!!!"
+        },
+        {
+            "src": "images/Flag_of_the_United_Kingdom.svg.png",
+            "description": "I was born in Poole, England on the 12 November, 1975"
+        },
+        {
+            "src": "images/Flag_of_Australia.svg",
+            "description": "I became an Australian citizen in approximately 2005.  I need to ask mum the exact year"
+        },
+        {
+            "src": "images/smallville.jpg",
+            "description": "One of my favourite shows when it was on.  Totally in love with Lana.... I have just started rewatching it (as of July 2020"
+        },
+        {
+            "src": "images/david_bowie_low_wallpaper.jpg",
+            "description": "David Bowie.  Another one of my favourite artists.  I have seen him live 3 times on the Reality tour.  Twice in Melbourne and once in Perth."
+        },
+        {
+            "src": "images/queen.jpg",
+            "description": "Queen - my favourite band.  Although, I am not a big fan of things after Freddie...."
+        },
+        {
+            "src": "images/young_buffy.png",
+            "description": "A very young Buffy. Maybe 12 weeks old?"
+        },
+        {
+            "src": "images/buffy_and_me.png",
+            "description": "Buffy, my dog, and me. Buffy is about 6 months of age here."
+        }
+    ]
+}
