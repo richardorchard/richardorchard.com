@@ -31,6 +31,14 @@
         {
             "src": "images/buffy_and_me.png",
             "description": "Buffy, my dog, and me. Buffy is about 6 months of age here."
+        },
+        {
+            "src": "images/my_old_car.jpg",
+            "description": "Yes, I was quite the Queen fan...."
+        },
+        {
+            "src": "images/Brian_May_and_Richard_Orchard_1998.jpg",
+            "description": "I met Brian May from Queen in 1998 at the Perth Airport.  I was also the first person to arrive for his Solo concert at the Metropolis Nightclub.  Might still be my favourite live show.  I guess it was that time in my life."
         }
     ]
 }
