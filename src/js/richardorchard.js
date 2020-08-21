@@ -82,14 +82,18 @@
 
 
 
-  let msnry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    percentPosition: true
+
+
+  imagesLoaded( grid, function() {
+    // init Isotope after all images have loaded
+    msnry = new Masonry( grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
   });
 
-  imagesLoaded(grid).on('progress', function () {
-    msnry.layout();
-  });
+
+
 
 }());

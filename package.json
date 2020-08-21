@@ -1,16 +1,15 @@
 {
-    "name": "richardorchardcom",
-    "version": "1.0.0",
-    "description": "personal website",
-    "main": "script.js",
-    "scripts": {
-      "start": "lite-server",
-      "test": "jest"
-    },
-    "author": "Richard Orchard",
-    "license": "",
-    "devDependencies": {
-      "lite-server": "^2.5.4"
-    }
+  "name": "richardorchardcom",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "script.js",
+  "scripts": {
+    "start": "lite-server",
+    "test": "jest"
+  },
+  "author": "Richard Orchard",
+  "license": "",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
   }
-  
+}
